@@ -1,0 +1,13 @@
+footer {
+    margin: 0.5em;
+    width:100%;
+    background-color: rgb(183, 200, 214);
+}
+
+footer p {
+    background-color: antiquewhite;
+    margin: 1em;
+    padding: 1em;
+    max-width: 50%;
+    color:white;
+}
