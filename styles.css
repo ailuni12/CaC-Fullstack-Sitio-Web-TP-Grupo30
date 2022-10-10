@@ -1,13 +1,22 @@
+
+
+
+/* FOOTER */
+
 footer {
-    margin: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width:100%;
     background-color: rgb(183, 200, 214);
 }
 
 footer p {
-    background-color: antiquewhite;
-    margin: 1em;
-    padding: 1em;
+    text-align: center;
+    border-color: black;
+    border-style: double;
+    margin: 0.5em;
+    padding: 0.5em;
     max-width: 50%;
-    color:white;
+    color:rgb(0, 0, 0);
 }
