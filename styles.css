@@ -79,22 +79,13 @@ body {
 
 footer {
     bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width:100%;
     background-color: rgb(255, 255, 255);
     text-align: center;
-}
-
-footer>p {
-    max-width: 20em;
     font-size: small;
-    margin: 1em;
-    padding: 1em;
     color:rgb(0, 0, 0);
 }
 
-footer>div>i {
-    padding: 0 0 0 0.5em;
+#contenedor-footer {
+    padding: 1em 5em;
 }
