@@ -1,34 +1,50 @@
+/* BODY */
+
+body {
+    margin:0;
+    background-color: rgb(216, 222, 226);
+}
+
 /* NAV MENU */
 
 #menu {
-    padding: 1em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     width:100%;
     background-color: rgb(183, 200, 214);
 }
 
 #menu>ul {
+    margin: 2em 2em 0em 2em;
     display: flex;
-    justify-content:flex-end;
-    align-items:flex-end;
-    align-content: flex-end;
 }
 
 #menu>ul>li {
-    background-color: antiquewhite;
+    background-color: rgb(183, 200, 214);
     list-style:none;
     padding: 1em;
-    margin: 0.5em;
     text-align: center;
 }
 
+#menu>ul>li:hover {
+    transition: 0.5s;
+    color:white;
+    background-color: black;
+}
+
 #logo {
+    margin-left: 1em;
     background-color: black;
     width: 3em;
     height: 3em;
     border-radius: 100%;
+}
+
+#logo:hover {
+    transition: 0.5s;
+    transform: scale(2);
 }
 
 
@@ -48,7 +64,7 @@ footer p {
     max-width: 50em;
     border-color: black;
     border-style: double;
-    margin: 0.5em;
-    padding: 0.5em;
+    margin: 1em;
+    padding: 1em;
     color:rgb(0, 0, 0);
 }
