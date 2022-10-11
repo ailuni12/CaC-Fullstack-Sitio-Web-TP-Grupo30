@@ -42,6 +42,12 @@ body {
     border-radius: 100%;
 }
 
+#logo>i {
+    display:flex;
+    justify-content: center;
+    color: white;
+}
+
 #logo:hover {
     transition: 0.5s;
     transform: scale(2);
