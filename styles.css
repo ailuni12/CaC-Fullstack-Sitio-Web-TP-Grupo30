@@ -18,7 +18,7 @@ body {
 
 /* MAIN */
 
-#main {
+.main {
     margin: 5em;
 }
 
@@ -89,6 +89,12 @@ body {
 #logo:hover {
     transition: 0.5s;
     transform: scale(1.2);
+}
+
+/* MAPA */
+
+#mapa {
+    width:100%;
 }
 
 
