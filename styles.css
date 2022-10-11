@@ -4,19 +4,20 @@
 /* FOOTER */
 
 footer {
+    position: fixed;
+    bottom: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     width:100%;
     background-color: rgb(183, 200, 214);
 }
 
 footer p {
-    text-align: center;
+    max-width: 50em;
     border-color: black;
     border-style: double;
     margin: 0.5em;
     padding: 0.5em;
-    max-width: 50%;
     color:rgb(0, 0, 0);
 }
