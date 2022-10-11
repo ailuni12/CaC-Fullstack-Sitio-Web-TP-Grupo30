@@ -12,6 +12,7 @@ body {
 /*ENCABEZADO*/
 
 .encabezado>img {
+    margin-top: 5em;
     width: 100%;
 }
 
@@ -48,25 +49,22 @@ body {
     color:black;
 }
 
-#menu a:hover {
-    color: aquamarine;
-}
-
 #menu>ul {
     margin: 2em 2em 0em 2em;
     display: flex;
 }
 
-#menu>ul>li {
+#menu>ul>a {
     background-color: aquamarine;
     list-style:none;
     padding: 1em;
     text-align: center;
 }
 
-#menu>ul>li:hover {
+#menu>ul>a:hover {
     transition: 0.5s;
     background-color: black;
+    color:aquamarine;
 }
 
 #logo {
