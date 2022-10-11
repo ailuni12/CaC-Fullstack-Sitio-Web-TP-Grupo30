@@ -9,13 +9,11 @@
     background-color: rgb(183, 200, 214);
 }
 
-#menu ul {
-    /*
+#menu>ul {
     display: flex;
     justify-content:flex-end;
     align-items:flex-end;
     align-content: flex-end;
-    */
 }
 
 #menu>ul>li {
