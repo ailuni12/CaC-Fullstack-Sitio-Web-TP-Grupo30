@@ -21,6 +21,18 @@ body {
     margin: 5em;
 }
 
+.notas {
+    background-color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.notas h2 {
+    color: rgb(0, 160, 107);
+    font-weight: 400;
+}
+
+
 /* NAV MENU */
 
 #menu {
