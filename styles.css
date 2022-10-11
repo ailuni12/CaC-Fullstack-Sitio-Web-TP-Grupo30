@@ -36,16 +36,14 @@ body {
 
 #logo {
     margin-left: 1em;
-    background-color: black;
+    background-color:aquamarine;
     width: 3em;
     height: 3em;
     border-radius: 100%;
 }
 
-#logo>i {
-    display:flex;
-    justify-content: center;
-    color: white;
+#logo>img {
+    padding: 0.8em 0.5em 0.5em 0.5em;
 }
 
 #logo:hover {
