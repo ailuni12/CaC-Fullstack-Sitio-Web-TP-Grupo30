@@ -8,12 +8,13 @@ body {
 /* NAV MENU */
 
 #menu {
+    font-family: 'Roboto';
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width:100%;
-    background-color: rgb(183, 200, 214);
+    background-color: rgb(255, 255, 255);
 }
 
 #menu>ul {
@@ -35,6 +36,8 @@ body {
 }
 
 #logo {
+    display:flex;
+    align-items: center;
     margin-left: 1em;
     background-color:aquamarine;
     width: 3em;
@@ -44,6 +47,12 @@ body {
 
 #logo>img {
     padding: 0.8em 0.5em 0.5em 0.5em;
+}
+
+#logo>h1 {
+    padding: 0 0 0 0.5em;
+    font-family: 'Roboto';
+    font-weight: 700;
 }
 
 #logo:hover {
