@@ -1,4 +1,37 @@
+/* NAV MENU */
 
+#menu {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width:100%;
+    background-color: rgb(183, 200, 214);
+}
+
+#menu ul {
+    /*
+    display: flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    align-content: flex-end;
+    */
+}
+
+#menu>ul>li {
+    background-color: antiquewhite;
+    list-style:none;
+    padding: 1em;
+    margin: 0.5em;
+    text-align: center;
+}
+
+#logo {
+    background-color: black;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+}
 
 
 /* FOOTER */
