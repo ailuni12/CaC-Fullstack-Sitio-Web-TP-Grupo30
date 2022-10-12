@@ -11,15 +11,19 @@ body {
 
 /*ENCABEZADO*/
 
-.encabezado>img {
+.encabezado {
     margin-top: 5em;
-    width: 100%;
+}
+
+.encabezado>img {
+    width:100%;
 }
 
 /* MAIN */
 
 .main {
     margin: 5em;
+    margin-top: 7em;
 }
 
 .notas {
@@ -37,6 +41,7 @@ body {
 /* NAV MENU */
 
 #menu {
+    top:0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,32 +117,3 @@ footer {
 #contenedor-footer {
     padding: 1em 5em;
 }
-
-
-/*--------------------------*/
-
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
-    background-color: #ccc;
-  }
-  
-  /* Style the collapsible content. Note: hidden by default */
-  .content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-  }
