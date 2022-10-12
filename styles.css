@@ -11,10 +11,6 @@ body {
 
 /*ENCABEZADO*/
 
-.encabezado {
-    margin-top: 5em;
-}
-
 .encabezado>img {
     width:100%;
 }
@@ -32,7 +28,7 @@ body {
     margin-bottom: 1em;
 }
 
-.notas h2 {
+.notas>h2 {
     color: rgb(0, 160, 107);
     font-weight: 400;
 }
