@@ -18,8 +18,8 @@ body {
 /* MAIN */
 
 .main {
-    margin: 5em;
-    margin-top: 7em;
+    margin: 3em;
+
 }
 
 .notas {
@@ -28,7 +28,7 @@ body {
     margin-bottom: 1em;
 }
 
-.notas>h2 {
+.notas>h3 {
     color: rgb(0, 160, 107);
     font-weight: 400;
 }
@@ -37,11 +37,9 @@ body {
 /* NAV MENU */
 
 #menu {
-    top:0;
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     width:100%;
     background-color: rgb(255, 255, 255);
 }
@@ -111,5 +109,5 @@ footer {
 }
 
 #contenedor-footer {
-    padding: 1em 5em;
+    padding: 1em 3em;
 }
