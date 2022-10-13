@@ -15,7 +15,7 @@ a {
 
 /* NAV MENU */
 
-#menu {
+.menu {
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -23,23 +23,23 @@ a {
     background-color: rgb(255, 255, 255);
 }
 
-#menu a {
+.menu a {
     color:black;
 }
 
-#menu>ul {
+.menu>ul {
     margin: 2em 2em 0em 2em;
     display: flex;
 }
 
-#menu>ul>a {
+.menu>ul>a {
     background-color: aquamarine;
     list-style:none;
     padding: 1em;
     text-align: center;
 }
 
-#menu>ul>a:hover {
+.menu>ul>a:hover {
     transition: 0.5s;
     background-color: black;
     color:aquamarine;
@@ -104,10 +104,10 @@ a {
 
 .footernota {
     display: flex;
-    color:black;
-    background-color: aquamarine;
     justify-content: space-between;
     align-items: center;
+    color:black;
+    background-color: aquamarine;
 }
 
 .footernota>* {
@@ -145,4 +145,35 @@ footer {
 
 #contenedor-footer {
     padding: 1em 3em;
+}
+
+
+/* MEDIA QUERIES Y BREAKPOINTS */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    
+    .menu {
+        display:block;
+        padding-top: 1em;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .main {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 25em));
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1200px) {
+
+
 }
