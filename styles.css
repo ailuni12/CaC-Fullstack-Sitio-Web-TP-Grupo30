@@ -42,32 +42,56 @@ a {
 .menu>ul>a:hover {
     transition: 0.5s;
     background-color: black;
-    color:aquamarine;
+    color:#7fffd4;
 }
 
-#logo {
-    display:flex;
-    align-items: center;
-    margin-left: 1em;
-    background-color:aquamarine;
-    width: 3em;
-    height: 3em;
-    border-radius: 100%;
-}
 
 #logo>img {
+    height:3em;
     padding: 0.8em 0.5em 0.5em 0.5em;
-}
-
-#logo>h1 {
-    padding: 0 0 0 0.5em;
-    font-weight: 700;
 }
 
 #logo:hover {
     transition: 0.5s;
     transform: scale(1.2);
 }
+
+/* -------------------------- */
+
+.menu2 {
+    display:flex;
+    justify-content: space-between;
+    background-color: #7fffd4;
+}
+
+#otterlogo {
+    margin: 0.5em;
+    font-size: 2em;
+}
+
+.menu2 a {
+    color: black;
+}
+
+.menu2 a:hover {
+    transition: 0.5s;
+    background-color: black;
+    color:#7fffd4;
+}
+
+.menuitem-container {
+    display:flex;
+}
+
+.menuitem {
+    padding: 0.5em 2em;
+}
+
+
+
+/* -------------------------- */
+
+
 
 /*ENCABEZADO*/
 
@@ -151,17 +175,31 @@ footer {
 /* MEDIA QUERIES Y BREAKPOINTS */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     
-    .menu {
-        display:block;
-        padding-top: 1em;
+    #logo {
+        display:none;
     }
+
+    .menu2 {
+        display: block;
+        text-align: center;
+    }
+
+    .menuitem-container {
+        justify-content: space-around;
+    }
+
+
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 901px) {
+
+    #otterlogo {
+        display:none;
+    }
 
     .main {
         display: grid;
