@@ -66,7 +66,7 @@ a {
 
 #otterlogo {
     margin: 0.5em;
-    font-size: 2em;
+    max-height: 3em;
 }
 
 .menu2 a {
@@ -122,6 +122,7 @@ a {
 }
 
 .notas>p {
+    color: rgb(122, 122, 122);
     padding: 0 1em 1em 1em;
 }
 
