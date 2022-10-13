@@ -39,6 +39,7 @@ a {
 
 .menu2 a {
     color: black;
+    font-weight: 700;
 }
 
 .menuitem-container a:hover {
@@ -79,12 +80,9 @@ a {
     margin-bottom: 1em;
 }
 
-.notas>h3 {
-    color: rgb(0, 160, 107);
-    font-weight: 400;
-}
 
 .notas>h3 {
+    color: rgb(0, 160, 107);
     padding: 1em 1em 0 1em;
     font-weight: 800;
 }
@@ -107,16 +105,50 @@ a {
     padding: 0 1em 0 1em;
 }
 
-.link2 {
-    font-weight: 700;
-}
-
 .footernota:hover {
     transition: 0.5s;
     color:white;
     background-color: black;
 }
 
+.link2 {
+    font-weight: 700;
+}
+
+.contenedor-small {
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+.contenedor-titulo {
+    display:flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.contenedor-titulo>* {
+    padding: 0.2em 0.2em 0.2em 0;
+}
+
+/*--- ESTILOS DE TEXTO ---*/
+
+.titulo-seccion {
+    font-size: medium;
+    margin-left: 3em;
+    font-weight: 400;
+}
+
+.titulo-verde {
+    color: rgb(0, 160, 107);
+    padding: 1em 1em 0 1em;
+    font-weight: 800;
+}
+
+.texto-gris {
+    color: rgb(122, 122, 122);
+    padding: 0 1em 1em 1em;
+}
 
 /* MAPA */
 
@@ -157,6 +189,14 @@ footer {
 
     .menuitem-container {
         justify-content: space-around;
+    }
+
+    .notas {
+        margin:0;
+    }
+
+    .notas>p {
+        display:none;
     }
 
 
