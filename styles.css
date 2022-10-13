@@ -134,6 +134,8 @@ a {
     display: flex;
     align-items: center;
     padding: 2em;
+    margin: auto;
+    max-width: 50em;
 }
 
 .logolarge {
@@ -241,7 +243,6 @@ footer {
     }
 
     .contenedor-textolanding {
-        max-width: 50em;
         margin: auto;
     }
 
