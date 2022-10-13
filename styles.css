@@ -46,15 +46,7 @@ a {
 }
 
 
-#logo>img {
-    height:3em;
-    padding: 0.8em 0.5em 0.5em 0.5em;
-}
 
-#logo:hover {
-    transition: 0.5s;
-    transform: scale(1.2);
-}
 
 /* -------------------------- */
 
@@ -69,11 +61,21 @@ a {
     max-height: 3em;
 }
 
+#logo>img {
+    height:3em;
+    padding: 0.8em 0 0.5em 0.5em;
+}
+
+#logo:hover, #otterlogo:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
 .menu2 a {
     color: black;
 }
 
-.menu2 a:hover {
+.menuitem-container a:hover {
     transition: 0.5s;
     background-color: black;
     color:#7fffd4;
@@ -176,7 +178,7 @@ footer {
 /* MEDIA QUERIES Y BREAKPOINTS */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1080px) {
     
     #logo {
         display:none;
@@ -196,7 +198,7 @@ footer {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1081px) {
 
     #otterlogo {
         display:none;
