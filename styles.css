@@ -13,42 +13,8 @@ a {
     text-decoration: none;
 }
 
-/* NAV MENU */
 
-.menu {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    width:100%;
-    background-color: rgb(255, 255, 255);
-}
-
-.menu a {
-    color:black;
-}
-
-.menu>ul {
-    margin: 2em 2em 0em 2em;
-    display: flex;
-}
-
-.menu>ul>a {
-    background-color: aquamarine;
-    list-style:none;
-    padding: 1em;
-    text-align: center;
-}
-
-.menu>ul>a:hover {
-    transition: 0.5s;
-    background-color: black;
-    color:#7fffd4;
-}
-
-
-
-
-/* -------------------------- */
+/* ---------MENU DE NAV----------- */
 
 .menu2 {
     display:flex;
