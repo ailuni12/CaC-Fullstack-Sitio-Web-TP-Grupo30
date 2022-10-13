@@ -71,13 +71,12 @@ a {
 /* MAIN */
 
 .main {
-    margin: 3em;
-
+    margin: auto;
+    max-width: 50em;
 }
 
 .notas {
     background-color: white;
-    margin-bottom: 1em;
 }
 
 
@@ -131,11 +130,21 @@ a {
     padding: 0.2em 0.2em 0.2em 0;
 }
 
+.contenedor-textolanding {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+}
+
+.logolarge {
+    max-height: 15em;
+}
+
 /*--- ESTILOS DE TEXTO ---*/
 
 .titulo-seccion {
     font-size: medium;
-    margin-left: 3em;
+    margin-left: 1em;
     font-weight: 400;
 }
 
@@ -148,6 +157,11 @@ a {
 .texto-gris {
     color: rgb(122, 122, 122);
     padding: 0 1em 1em 1em;
+}
+
+.quote-large {
+    padding: 1em;
+    font-size: x-large;
 }
 
 /* MAPA */
@@ -176,6 +190,17 @@ footer {
 /* MEDIA QUERIES Y BREAKPOINTS */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 700px) {
+
+    .logolarge {
+        display:none;
+    }
+
+}
+
+
+
+
 @media only screen and (max-width: 1080px) {
     
     #logo {
@@ -199,8 +224,6 @@ footer {
         display:none;
     }
 
-
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -210,11 +233,20 @@ footer {
         display:none;
     }
 
-    .main {
+    .main-notas {
         display: grid;
         grid-auto-flow: column;
         gap: 1em;
   grid-template-columns: repeat(auto-fit, minmax(10em, 25em));
+    }
+
+    .contenedor-textolanding {
+        max-width: 50em;
+        margin: auto;
+    }
+
+    .main {
+        margin-top: 1em;
     }
 
 }
