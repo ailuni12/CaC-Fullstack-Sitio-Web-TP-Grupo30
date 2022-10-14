@@ -115,6 +115,7 @@ a {
 }
 
 .contenedor-small {
+    padding: 1em;
     background-color: white;
     margin-bottom: 1em;
 }
@@ -142,28 +143,42 @@ a {
     max-height: 15em;
 }
 
+.contenedor-articulo {
+    padding: 1em;
+    background-color: #ffffff;
+}
+
 /*--- ESTILOS DE TEXTO ---*/
 
 .titulo-seccion {
-    font-size: medium;
     margin-left: 1em;
     font-weight: 400;
 }
 
 .titulo-verde {
-    color: rgb(0, 160, 107);
-    padding: 1em 1em 0 1em;
+    color: #00a06b;
     font-weight: 800;
 }
 
+.texto-verde {
+    color:#00a06b;
+}
+
 .texto-gris {
-    color: rgb(122, 122, 122);
-    padding: 0 1em 1em 1em;
+    color: #7a7a7a;
 }
 
 .quote-large {
     padding: 1em;
     font-size: x-large;
+}
+
+.titulo-nota {
+    font-size: x-large;
+}
+
+.bajada-nota {
+    color: #00a06b;
 }
 
 /* MAPA */
@@ -180,7 +195,6 @@ footer {
     width:100%;
     background-color:aquamarine;
     text-align: center;
-    font-size: small;
     color:rgb(0, 0, 0);
 }
 
