@@ -148,6 +148,14 @@ a {
     background-color: #ffffff;
 }
 
+.boton1 {
+    background-color: black;
+    color: white;
+    border: none;
+    padding:1em;
+    width:100%;
+}
+
 /*--- ESTILOS DE TEXTO ---*/
 
 .titulo-seccion {
