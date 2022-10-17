@@ -75,6 +75,10 @@ a {
     max-width: 50em;
 }
 
+.logolarge {
+    max-height: 15em;
+}
+
 .notas {
     background-color: white;
 }
@@ -114,11 +118,14 @@ a {
     font-weight: 700;
 }
 
+/*---- CONTENEDORES ----*/
+
 .contenedor-small {
     padding: 1em;
     background-color: white;
     margin-bottom: 1em;
 }
+
 
 .contenedor-titulo {
     display:flex;
@@ -139,14 +146,31 @@ a {
     max-width: 50em;
 }
 
-.logolarge {
-    max-height: 15em;
-}
-
 .contenedor-articulo {
     padding: 1em;
     background-color: #ffffff;
 }
+
+.contenedor-transparente {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1em 0 1em 0;
+}
+
+.promo-contenedor {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em;
+    margin:auto;
+}
+
+.promo-contenedor:hover {
+    transition: 2s;
+    background-size:contain;
+}
+
+
+/*--- estilos para formulario ---*/
 
 .contacto-fields {
     height: 3em;
@@ -155,6 +179,8 @@ a {
     background-color: #f0f6fa;
     color: #7a7a7a;
 }
+
+/*--- BOTONES ---*/
 
 .boton1 {
     background-color: black;
@@ -170,6 +196,20 @@ a {
     transition: 0.5s;
     color: black;
     background-color: #7fffd4;
+}
+
+.boton-naranja {
+    border: 0;
+    font-weight: 700;
+    color: white;
+    background-color: #ff8800;
+    width: 100%;
+}
+
+.boton-naranja:hover {
+    transition: 0.5s;
+    color:black;
+    background-color: #ffffff;
 }
 
 textarea {
