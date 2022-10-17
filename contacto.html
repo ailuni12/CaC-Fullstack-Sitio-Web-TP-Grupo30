@@ -49,22 +49,22 @@
             <h2 class="titulo-seccion">Contactanos</h2><i class="fa-solid fa-message"></i>
         </div>
 
-        <form class="contenedor-small
+        <form name="formulariovalido" class="contenedor-small
         formulario-contacto">
             <p class="titulo-verde">Si tenés dudas o consultas, envianos tus datos y nos pondremos en contacto con vos</p>
             <label for="nombre-contacto" class="texto-gris">Nombre: </label>
-            <input id="nombre-contacto" class="contacto-fields" type="text" value="Otter"><br>
+            <input id="nombre-contacto" class="contacto-fields" type="text" value="Otter" name="nombre" maxlength="100"><br>
             <label for="email-contacto" class="texto-gris">E-mail: </label><input type="email" class="contacto-fields" id="email-contacto"
-            value="ejemplo@ottertravel.com"><br>
-            <label for="asunto-contacto" class="texto-gris">Asunto: </label><select name=razon class="contacto-fields">
+            value="ejemplo@ottertravel.com" maxlength="100"><br>
+            <label for="asunto-contacto" class="texto-gris">Asunto: </label><select name="razon" class="contacto-fields">
                 <option value="Elegir">Elegir
                 <option value="Ventas">Ventas
                 <option value="Clientes">Atención al cliente
                 <option value="Reclamos">Reclamos
             </select><br>
-            <label for="mensaje-contacto" class="texto-gris">Mensaje:</label><br>
+            <label for="mensaje-contacto" class="texto-gris">Mensaje (Opcional):</label><br>
             <textarea id="contacto-mensaje" class="contacto-fields" rows="4" cols="50">Escriba su mensaje aquí</textarea><br>
-            <button type="submit" class="boton1">ENVIAR</button>
+            <button id="botonenvio"  type="submit" class="boton1" onclick="validarEnviar()">ENVIAR</button>
 
         </form>
     </div>
@@ -81,6 +81,28 @@
         </p>
         </div>
     </footer>
+
+    <script>
+
+        function validarEnviar() {
+            if (document.formulariovalido.nombre.value.length < 3) {
+                alert("Por favor escriba un nombre válido.")
+                document.formulariovalido.nombre.focus()
+                return 0;
+            }
+
+            if (document.formulariovalido.razon.selectedIndex == 0) {
+                alert("Por favor seleccione un motivo de contacto.")
+                document.formulariovalido.razon.focus()
+                return 0;
+            }
+
+            alert("Su mensaje fue enviado. Nos pondremos en contacto con usted. Gracias!");
+            document.formulariovalido.submit();
+        }
+
+    </script>
+
 </body>
 
 </html>

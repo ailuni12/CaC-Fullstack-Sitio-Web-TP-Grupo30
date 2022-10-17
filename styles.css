@@ -6,7 +6,7 @@ html {
 
 body {
     margin:0;
-    background-color: rgb(216, 222, 226);
+    background-color: #d8dee2;
 }
 
 a {
@@ -152,7 +152,7 @@ a {
     height: 3em;
     width: 100%;
     border:none;
-    background-color: #dfdfdf;
+    background-color: #f0f6fa;
     color: #7a7a7a;
 }
 
