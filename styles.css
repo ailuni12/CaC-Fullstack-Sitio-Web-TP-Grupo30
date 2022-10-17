@@ -128,8 +128,8 @@ a {
 
 
 .contenedor-titulo {
-    display:flex;
-    align-items: center;
+    text-align: center;
+    min-height: 3em;
     background-color: black;
     color: white;
 }
@@ -156,11 +156,10 @@ a {
 }
 
 .promo-contenedor {
-    background-color:black;
-    background-size:5em;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 1em;
-    margin:auto;
+    margin:1em;
     font-size: large;
     text-align: center;
 }
@@ -174,6 +173,11 @@ a {
 .promo-contenedor>h3{
     color:white;
     font-size: x-large;
+}
+
+.promo-contenedor:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
 }
 
 
@@ -293,12 +297,20 @@ footer {
         display:none;
     }
 
+    body {
+        font-size: xx-large;
+    }
+
 }
 
 
 
 
 @media only screen and (max-width: 1080px) {
+
+    body {
+        font-size: larger;
+    }
     
     #logo {
         display:none;
