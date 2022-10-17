@@ -158,15 +158,18 @@ a {
 }
 
 .promo-contenedor {
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("imagenes/otter-pattern.png");
+    background-color:white;
+    background-size:5em;
+    background-position: center;
     padding: 1em;
     margin:auto;
+    font-size: large;
 }
 
 .promo-contenedor:hover {
-    transition: 2s;
-    background-size:contain;
+    transition: 0.5s;
+    background-size:7em;
 }
 
 
@@ -209,7 +212,7 @@ a {
 .boton-naranja:hover {
     transition: 0.5s;
     color:black;
-    background-color: #ffffff;
+    background-color:#7fffd4;
 }
 
 textarea {
