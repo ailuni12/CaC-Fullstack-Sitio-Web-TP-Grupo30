@@ -148,13 +148,38 @@ a {
     background-color: #ffffff;
 }
 
+.contacto-fields {
+    height: 3em;
+    width: 100%;
+    border:none;
+    background-color: #dfdfdf;
+    color: #7a7a7a;
+}
+
 .boton1 {
     background-color: black;
     color: white;
     border: none;
     padding:1em;
+    margin-top: 1em;
     width:100%;
+    font-weight: 700;
 }
+
+.boton1:hover {
+    transition: 0.5s;
+    color: black;
+    background-color: #7fffd4;
+}
+
+textarea {
+    min-height: 20em;
+    max-height: 20em;
+    overflow-y: scroll;
+    min-width: 100%;
+    max-width: 100%;
+}
+
 
 /*--- ESTILOS DE TEXTO ---*/
 

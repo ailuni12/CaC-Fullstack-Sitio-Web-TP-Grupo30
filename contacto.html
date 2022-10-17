@@ -15,7 +15,7 @@
 <body>
 
     <nav class="menu2">
-        <a href="index.html"><div id="logo"><img src="imagenes/ottertravel icono.svg"></div></a>
+        <a href="index.html"><div id="logo"><img src="imagenes/ottertravel texto.svg"></div></a>
 
         <a href="index.html"><img id="otterlogo" src="imagenes/otter-solid.svg"></a>
 
@@ -49,21 +49,22 @@
             <h2 class="titulo-seccion">Contactanos</h2><i class="fa-solid fa-message"></i>
         </div>
 
-        <form class="contenedor-small">
-            <p class="titulo-verde">Si tenés dudas o consultas, envianos tus datos y nos ponemos en contacto con vos</p>
+        <form class="contenedor-small
+        formulario-contacto">
+            <p class="titulo-verde">Si tenés dudas o consultas, envianos tus datos y nos pondremos en contacto con vos</p>
             <label for="nombre-contacto" class="texto-gris">Nombre: </label>
-            <input id="nombre-contacto" type="text" value="Nombre"><br>
-            <label for="email-contacto" class="texto-gris">E-mail: </label><input type="email" id="email-contacto"
-            value="E-Mail"><br>
-            <label for="asunto-contacto" class="texto-gris">Asunto: </label><select name=razon>
+            <input id="nombre-contacto" class="contacto-fields" type="text" value="Otter"><br>
+            <label for="email-contacto" class="texto-gris">E-mail: </label><input type="email" class="contacto-fields" id="email-contacto"
+            value="ejemplo@ottertravel.com"><br>
+            <label for="asunto-contacto" class="texto-gris">Asunto: </label><select name=razon class="contacto-fields">
                 <option value="Elegir">Elegir
                 <option value="Ventas">Ventas
                 <option value="Clientes">Atención al cliente
                 <option value="Reclamos">Reclamos
             </select><br>
             <label for="mensaje-contacto" class="texto-gris">Mensaje:</label><br>
-            <input type="text" id="mensaje-contacto"><br>
-            <input type="submit" class="boton1">
+            <textarea id="contacto-mensaje" class="contacto-fields" rows="4" cols="50">Escriba su mensaje aquí</textarea><br>
+            <button type="submit" class="boton1">ENVIAR</button>
 
         </form>
     </div>
