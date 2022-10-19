@@ -307,7 +307,9 @@ footer {
 }
 
 #contenedor-footer {
-    padding: 1em 3em;
+    max-width: 50em;
+    padding: 1em;
+    margin: auto;
 }
 
 
