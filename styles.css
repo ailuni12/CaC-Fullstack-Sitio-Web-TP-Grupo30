@@ -69,9 +69,10 @@ a {
 }
 
 .contenedor-imgfondo {
-    background-image: url(imagenes/caribe.jpg);
+    min-height: 25em;
     background-size:cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* MAIN */
@@ -106,8 +107,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color:black;
-    background-color: aquamarine;
+    color:#ffffff;
+    background-color: black;
 }
 
 .footernota>* {
@@ -116,8 +117,8 @@ a {
 
 .footernota:hover {
     transition: 0.5s;
-    color:white;
-    background-color: black;
+    color:black;
+    background-color:#7fffd4;
 }
 
 .link2 {
@@ -136,8 +137,8 @@ a {
 .contenedor-titulo {
     text-align: center;
     min-height: 3em;
-    background-color: black;
-    color: white;
+    background-color:#7fffd4;
+    color: black;
 }
 
 .contenedor-titulo>* {
@@ -184,6 +185,15 @@ a {
 .promo-contenedor:hover {
     transition: 0.5s;
     transform: scale(1.2);
+}
+
+.contenedor-grid {
+        display: grid;
+        grid-auto-flow: column;
+        gap:1em;
+        grid-template-columns: repeat(auto-fit, minmax(8em, 15em));
+        max-width: 50em;
+        margin: auto;
 }
 
 
@@ -303,7 +313,7 @@ footer {
 
 /* MEDIA QUERIES Y BREAKPOINTS */
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+
 @media only screen and (max-width: 700px) {
 
     .logolarge {
@@ -346,9 +356,14 @@ footer {
         display:none;
     }
 
+    .contenedor-grid {
+        display:block;
+        text-align: center;
+    }
+
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 1081px) {
 
     #otterlogo {
@@ -365,7 +380,7 @@ footer {
     .contenedor-transparente {
         display: grid;
         grid-auto-flow: column;
-  grid-template-columns: repeat(auto-fit, minmax(10em, 25em));
+  grid-template-columns: repeat(auto-fit, minmax(17em, 17em));
     }
 
     .contenedor-textolanding {
@@ -375,11 +390,5 @@ footer {
     .main {
         margin-top: 1em;
     }
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 1200px) {
-
 
 }
