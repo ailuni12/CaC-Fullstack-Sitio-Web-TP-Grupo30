@@ -6,7 +6,7 @@ html {
 
 body {
     margin:0;
-    background-color: #d8dee2;
+    background-color:#f0f6fa;
 }
 
 a {
@@ -66,6 +66,13 @@ a {
 
 .encabezado>img {
     width:100%;
+}
+
+.contenedor-imgfondo {
+    background-image: url(imagenes/nueva-zelanda-playa.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* MAIN */
@@ -235,6 +242,11 @@ textarea {
 
 /*--- ESTILOS DE TEXTO ---*/
 
+mark {
+    font-family: 'Krona One', 'Arial Narrow', Arial, sans-serif;
+    background-color: aquamarine;
+}
+
 .titulo-seccion {
     margin-left: 1em;
     font-weight: 400;
@@ -346,6 +358,12 @@ footer {
         display: grid;
         grid-auto-flow: column;
         gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 25em));
+    }
+
+    .contenedor-transparente {
+        display: grid;
+        grid-auto-flow: column;
   grid-template-columns: repeat(auto-fit, minmax(10em, 25em));
     }
 
