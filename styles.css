@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Dela+Gothic+One&family=Rowdies:wght@300;400;700&display=swap');
+
+
 html {
     font-family: 'Roboto';
 }
@@ -158,6 +161,10 @@ a {
     background-color: #ffffff;
 }
 
+.main-notas {
+    margin-bottom: 1em;
+}
+
 .contenedor-transparente {
     padding: 1em;
 }
@@ -183,8 +190,8 @@ a {
 }
 
 .promo-contenedor:hover {
-    transition: 0.5s;
-    transform: scale(1.2);
+    transition: 0.5s ease-out;
+    scale:1.1;
 }
 
 .contenedor-grid {
@@ -207,6 +214,25 @@ a {
     background-position: center;
 }
 
+.contenedor-destinos {
+    margin-bottom: 1em;
+}
+
+.contenedor-destinos-grid {
+    background-color: white;
+    padding: 2em;
+    }
+
+.items-destinos-grid {
+    text-align: center;
+}
+
+.items-destinos-grid>img {
+    object-fit:cover;
+    width: 100%;
+    max-height: 15em;
+    position: center;
+}
 
 /*--- estilos para formulario ---*/
 
@@ -263,14 +289,11 @@ textarea {
 /*--- ESTILOS DE TEXTO ---*/
 
 mark {
-    font-weight: 700;
-    font-family: 'Arial Narrow', Arial, sans-serif;
     background-color: aquamarine;
-    
 }
 
 .titulo-seccion {
-    margin-left: 1em;
+    font-family: 'Dela Gothic One';
     font-weight: 400;
 }
 
@@ -288,6 +311,8 @@ mark {
 }
 
 .quote-large {
+    font-family: 'Roboto';
+    text-align: center;
     padding: 1em;
     font-size: x-large;
 }
@@ -298,6 +323,11 @@ mark {
 
 .bajada-nota {
     color: #00a06b;
+}
+
+.texto-img {
+    font-family: 'Dela Gothic One';
+    font-weight: 300;
 }
 
 /* MAPA */
@@ -394,6 +424,26 @@ footer {
         display: grid;
         grid-auto-flow: column;
   grid-template-columns: repeat(auto-fit, minmax(17em, 17em));
+    }
+
+    .contenedor-destinos-grid {
+        background-color: white;
+        padding: 1em;
+        display:grid;
+        gap: 1em;
+        grid-template-columns: 33em 33em;
+        grid-template-rows: 12em 12em 12em 12em;
+    }
+
+    .items-destinos-grid>img {
+        object-fit:cover;
+        height: 12em;
+        width: 33em;
+        position: center;
+    }
+
+    .items-destinos-grid {
+        text-align: left;
     }
 
     .contenedor-textolanding {
