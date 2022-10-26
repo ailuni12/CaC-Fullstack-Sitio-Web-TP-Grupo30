@@ -2,13 +2,16 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/09e7b012e5.js" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="icon" type="image/x-icon" href="/imagenes/otter-large.svg">
     </head>
 
 <title>Otter Travel</title>
@@ -73,6 +76,20 @@
             </div>
         </div>
 
+<!-- api -->
+        <div id="app">
+            <h3 class="texto-img">Hora Actual en Buenos Aires</h3>
+            <p class="">{{datetime}}</p>
+            
+            <section v-if="errored">
+              <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde</p>
+            </section>
+          
+            </section>
+          </div>
+          <script src="api.js"></script>
+
+
         <div class="contenedor-titulo">
         
             <h2 class="titulo-seccion">Por qué elegirnos?</h2>
@@ -111,6 +128,7 @@
 
         
     </div>
+
 
     <footer>
         <div id="contenedor-footer">

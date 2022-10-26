@@ -336,6 +336,14 @@ mark {
     width:100%;
 }
 
+/* API */
+
+#app {
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+}
+
 
 /* FOOTER */
 
