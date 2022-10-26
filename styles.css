@@ -371,10 +371,6 @@ footer {
         display:none;
     }
 
-    body {
-        font-size: xx-large;
-    }
-
     .menu2 {
         flex-flow: wrap;
         background-color: #7fffd4;
