@@ -375,6 +375,16 @@ footer {
         font-size: xx-large;
     }
 
+    .menu2 {
+        flex-flow: wrap;
+        background-color: #7fffd4;
+    }
+
+    
+    .menuitem-container {
+        flex-flow: wrap;
+    }
+
 }
 
 

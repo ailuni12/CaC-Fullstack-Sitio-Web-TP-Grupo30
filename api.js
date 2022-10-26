@@ -9,7 +9,7 @@ const app = new Vue({
         .then(response => response.json())
         .then(data => { 
             console.log(data);
-            this.datetime=data.datetime.substr(11,11)
+            this.datetime=data.datetime
             })
         .catch( error => console.log(error));
     }
